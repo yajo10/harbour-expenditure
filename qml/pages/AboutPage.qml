@@ -18,6 +18,18 @@ Page {
             x: Theme.paddingLarge
             width: parent.width - 2*x
 
+            SectionHeader{
+                text: qsTr("About")
+            }
+
+            Image {
+                id: logo
+                source: "/usr/share/icons/hicolor/172x172/apps/harbour-expenditure.png"
+                smooth: true
+                height: parent.width / 2
+                width: parent.width / 2
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
             Label {
                 width: parent.width
                 height: Theme.itemSizeLarge
@@ -30,14 +42,6 @@ Page {
             Item {
                 width: parent.width
                 height: Theme.paddingLarge
-            }
-            Image {
-                width: parent.width
-                height: Theme.itemSizeHuge
-                source: "../cover/harbour-expenditure.png"
-                sourceSize.width: height
-                sourceSize.height: height
-                fillMode: Image.PreserveAspectFit
             }
             Item {
                 width: parent.width
@@ -61,24 +65,64 @@ Page {
                 text: qsTr("Thanksgiving, feedback and support is always welcome.")
                 bottomPadding: Theme.paddingLarge * 2
             }
+            SectionHeader{
+                text: qsTr("Troubleshooting")
+            }
+
             Label {
                 x: Theme.paddingMedium
                 width: parent.width - 2*x
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: Theme.fontSizeExtraSmall
                 wrapMode: Text.Wrap
-                text: qsTr("Troubleshooting:")
-                    + "\n" + qsTr("In case of any database error tap 10x on the word 'Settings' for cleanup options.")
+                text: qsTr("In case of any database error tap 10x on the word 'Settings' for cleanup options.")
                 bottomPadding: Theme.paddingLarge * 2
             }
+            SectionHeader {
+                text: qsTr("Source code")
+            }
+
+            Label {
+                x: Theme.paddingMedium
+                width: parent.width - 2*x
+                horizontalAlignment: Text.AlignHCenter
+                font.pixelSize: Theme.fontSizeExtraSmall
+                wrapMode: Text.Wrap
+                text: qsTr("Thanksgiving, feedback and support is always welcome.")
+                bottomPadding: Theme.paddingLarge * 2
+                onLinkActivated: Qt.openUrlExternally(link)
+            }
+            BackgroundItem{
+                            width: parent.width
+                            height: Theme.itemSizeMedium
+                            Row{
+                                width:parent.width - 2 * x
+                                height: parent.height
+                                x:Theme.horizontalPageMargin
+                                spacing:Theme.paddingLarge
+
+                                Label{
+                                    width: parent.width - parent.spacing
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    wrapMode: Text.WrapAnywhere
+                                    font.pixelSize: Theme.fontSizeSmall
+
+                                    text: "https://github.com/yajo10/harbour-expenditure"
+                                    color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
+
+                                }
+                            }
+                            onClicked: Qt.openUrlExternally("https://github.com/yajo10/harbour-expenditure")
+                        }
+
             Label {
                 width: parent.width
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.secondaryColor
                 wrapMode: Text.Wrap
-                text: qsTr("Contact:")
-                + "\n" + qsTr("Copyright © 2022 Tobias Planitzer")
+                text: qsTr("First author:")
+                + "\n" + qsTr("Tobias Planitzer")
                 + "\n" + ("tp.labs@protonmail.com")
                 + "\n" + qsTr("License: GPL v3")
             }

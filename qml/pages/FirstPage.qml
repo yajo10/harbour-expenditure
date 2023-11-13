@@ -145,6 +145,10 @@ Page {
             qsort(0,count)
         }
     }
+    AboutPage {
+        id: aboutPage
+    }
+
     SettingsPage {
         id: settingsPage
     }
@@ -234,6 +238,10 @@ Page {
             id: idPulldownMenu
             quickSelect: true
 
+            MenuItem {
+                text: qsTr("About")
+                onClicked: pageStack.push(aboutPage)
+            }
             MenuItem {
                 text: qsTr("Settings")
                 onClicked: pageStack.push(settingsPage)

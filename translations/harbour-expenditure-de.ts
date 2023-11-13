@@ -8,10 +8,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Copyright © 2022 Tobias Planitzer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>License: GPL v3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -24,15 +20,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Troubleshooting:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>In case of any database error tap 10x on the word &apos;Settings&apos; for cleanup options.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Contact:</source>
+        <source>First author:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tobias Planitzer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Troubleshooting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source code</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -285,6 +293,10 @@
     </message>
     <message>
         <source>Remove entry?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

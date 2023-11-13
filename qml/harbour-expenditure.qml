@@ -4,6 +4,7 @@ import QtQuick.LocalStorage 2.0
 import "pages"
 
 ApplicationWindow {
+    id: main
     initialPage: Component { FirstPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
