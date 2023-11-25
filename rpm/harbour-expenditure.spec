@@ -12,8 +12,8 @@ Summary:    Expenditure
 Version:    0.3
 Release:    1
 Group:      Qt/Qt
-License:    LICENSE
-URL:        http://example.org/
+License:    GPL-3.0-only
+URL:        https://github.com/yajo10/harbour-imgorganizer
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-expenditure.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
@@ -24,7 +24,28 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my Sailfish OS Application
+App for tracking expenses between friends - it's for SailfishOS
+
+%if 0%{?_chum}
+Title: Expenditure
+Type: desktop-application
+DeveloperName: yajo
+Categories:
+ - Office
+Custom:
+  Repo: https://github.com/yajo10/harbour-expenditure
+PackageIcon: https://github.com/yajo10/harbour-expenditure/raw/master/icons/172x172/harbour-expenditure.png
+Screenshots:
+ - https://github.com/yajo10/harbour-imgorganizer/raw/master/screenshots/Screenshot1.jpg
+ - https://github.com/yajo10/harbour-imgorganizer/raw/master/screenshots/Screenshot2.jpg
+ - https://github.com/yajo10/harbour-imgorganizer/raw/master/screenshots/Screenshot3.jpg
+ - https://github.com/yajo10/harbour-imgorganizer/raw/master/screenshots/Screenshot4.jpg
+Links:
+  Homepage: https://github.com/yajo10/harbour-expenditure
+  Help: https://github.com/yajo10/harbour-expenditure/issues
+  Bugtracker: https://github.com/yajo10/harbour-expenditure/issues
+  Donation: https://liberapay.com/yajo10/donate
+%endif
 
 
 %prep
