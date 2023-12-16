@@ -92,6 +92,20 @@ Page {
                 bottomPadding: Theme.paddingLarge * 2
                 onLinkActivated: Qt.openUrlExternally(link)
             }
+            SectionHeader {
+                text: qsTr("Translations")
+            }
+
+            Label {
+                x: Theme.paddingMedium
+                width: parent.width - 2*x
+                horizontalAlignment: Text.AlignHCenter
+                font.pixelSize: Theme.fontSizeExtraSmall
+                wrapMode: Text.Wrap
+                text: qsTr("Swedish translation by eson57. Thank you :)")
+                bottomPadding: Theme.paddingLarge * 2
+                onLinkActivated: Qt.openUrlExternally(link)
+            }
             BackgroundItem{
                             width: parent.width
                             height: Theme.itemSizeMedium

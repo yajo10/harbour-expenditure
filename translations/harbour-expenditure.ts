@@ -43,6 +43,14 @@
         <source>Source code</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Swedish translation by eson57. Thank you :)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BannerAddExpense</name>

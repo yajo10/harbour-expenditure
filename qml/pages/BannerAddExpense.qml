@@ -518,6 +518,8 @@ MouseArea {
         var date_time = editedTimeStamp // new or edited time of expense
         var expense_name = idTextfieldItem.text
         var expense_sum = idTextfieldPrice.text
+        expense_sum = expense_sum.replace(",", ".")
+        expense_sum = Number(expense_sum).toFixed(2)
         var expense_currency = idTextfieldCurrency.text
         var expense_info = idTextfieldInfo.text
         var expense_members = ""
