@@ -9,7 +9,7 @@ Name:       harbour-expenditure
 # << macros
 
 Summary:    Expenditure
-Version:    0.3
+Version:    0.4
 Release:    1
 Group:      Qt/Qt
 License:    GPL-3.0-only
